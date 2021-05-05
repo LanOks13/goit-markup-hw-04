@@ -68,6 +68,8 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  outline: 3px solid tomato;
 }
 
 .header-page {
@@ -202,7 +204,20 @@ img {
 
 .section-hero {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-img-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title1-h1 {
@@ -431,6 +446,58 @@ img {
 address .item:not(:last-child) {
   margin-bottom: 9px;
 }
+
+/* ^^^^^^^^^^^^^^^^ ПОСТОЯННЫЕ КЛИЕНТЫ - start ********************** */
+.out-line {
+  outline: 3px solid green;
+  background-color: yellow;
+}
+
+.reg-customers {
+  padding-bottom: var(--padding-section);
+}
+
+.set-customers {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--margin-left-li));
+
+  text-align: center;
+}
+
+.set-customers > .item {
+  flex-basis: calc(100% / 6 - var(--margin-left-li));
+  margin-left: var(--margin-left-li);
+}
+
+.botton-row {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 70px;
+}
+.sm-botton {
+  margin-left: 70px;
+}
+
+.sm-botton-list {
+  display: flex;
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.color {
+  color: var(--links-text-color);
+}
+.sm-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--links-text-color);
+  margin-bottom: 20px;
+}
+/* ^^^^^^^^^^^^^^^^^ПОСТОЯННЫЕ КЛИЕНТЫ - end *********************** */
 
 /* PORTFOLIO */
 
