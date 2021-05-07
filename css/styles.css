@@ -198,15 +198,12 @@ img {
 
 /* HERO */
 
-.hero-dark-bg-cl {
-  background-color: var(--first-dark-bg-color);
-}
-
 .section-hero {
+  background: var(--first-dark-bg-color);
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
-  height: 600px;
+  /* height: 600px; */
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -218,6 +215,10 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.hero-dark-bg-cl {
+  background-color: var(--first-dark-bg-color);
 }
 
 .hero-title1-h1 {
@@ -473,22 +474,22 @@ address .item:not(:last-child) {
 .botton-row {
   display: flex;
   align-items: flex-start;
-  margin-right: 70px;
 }
-.sm-botton {
+
+/* СОЦСЕТИ */
+
+.social {
   margin-left: 70px;
+  /* flex-wrap: wrap;
+  flex-direction: column; */
 }
 
-.sm-botton-list {
-  display: flex;
-  padding-top: 72px;
-  padding-bottom: 100px;
+.connect {
+  margin-top: 12px;
+  margin-bottom: 20px;
 }
 
-.color {
-  color: var(--links-text-color);
-}
-.sm-title {
+.subscribe {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -497,7 +498,20 @@ address .item:not(:last-child) {
   color: var(--links-text-color);
   margin-bottom: 20px;
 }
-/* ^^^^^^^^^^^^^^^^^ПОСТОЯННЫЕ КЛИЕНТЫ - end *********************** */
+
+.links-list {
+  display: flex;
+}
+
+.social-network {
+  outline: 3px solid red;
+}
+
+.color {
+  color: var(--links-text-color);
+}
+
+/* ^^^^^^^^^^^^^^^^^ПОСТОЯННЫЕ КЛИЕНТЫ +++ СОЦСЕТИ - end *********************** */
 
 /* PORTFOLIO */
 
