@@ -196,6 +196,19 @@ img {
   color: var(--accent-text-color);
 }
 
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 /* HERO */
 
 .section-hero {
@@ -473,7 +486,7 @@ address .item:not(:last-child) {
 
 .botton-row {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 /* СОЦСЕТИ */
@@ -482,11 +495,6 @@ address .item:not(:last-child) {
   margin-left: 70px;
   /* flex-wrap: wrap;
   flex-direction: column; */
-}
-
-.connect {
-  margin-top: 12px;
-  margin-bottom: 20px;
 }
 
 .subscribe {
