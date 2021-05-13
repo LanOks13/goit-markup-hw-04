@@ -72,6 +72,12 @@ img {
   outline: 3px solid tomato;
 }
 
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .header-page {
   border-bottom: 1px solid var(--border-header-box);
 }
@@ -119,9 +125,9 @@ img {
 
 /* 2-й спосіб відступу елементів один від одного */
 
-.list-contact .item + .item {
-  margin-left: 50px;
-}
+/* .list-contact .cont-item + .cont-item {
+  margin-left: 50px; 
+}*/
 
 .list-contact .link-header {
   display: block;
@@ -155,10 +161,6 @@ img {
   color: var(--links-text-color);
 }
 
-.list {
-  list-style: none;
-}
-
 .link-nav {
   font-weight: 500;
   font-size: 14px;
@@ -182,7 +184,13 @@ img {
   color: var(--accent-text-color);
 }
 
-.link-header {
+.list-contact .cont-item + .cont-item {
+  margin-left: 30px;
+}
+
+.list-contact .link-header {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -194,6 +202,10 @@ img {
 .link-header:hover,
 .link-header:focus {
   color: var(--accent-text-color);
+}
+
+.contacts-icon {
+  margin-right: 10px;
 }
 
 .icon-envelope {
