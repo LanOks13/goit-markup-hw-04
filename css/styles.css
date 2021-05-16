@@ -89,7 +89,7 @@ img {
 
 .site-nav {
   display: flex;
-  margin-left: 93px;
+  /* margin-left: 93px; */
   align-items: center;
 }
 
@@ -135,7 +135,7 @@ img {
   padding-bottom: 32px;
 }
 
-.link-logo {
+.logo {
   font-family: var(--logo-font);
   font-size: 26px;
   line-height: 1.19;
@@ -143,22 +143,21 @@ img {
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 25px;
+  margin-right: 93px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-part1-web {
+  color: var(--accent-text-color);
+}
+
+.logo-part2-studio {
+  color: var(--logo-text-color);
 }
 
 .nav-white-bg-cl {
   background-color: var(--main-white-bg-color);
-}
-
-.logo-web {
-  color: var(--accent-text-color);
-}
-
-.logo-studio1 {
-  color: var(--logo-text-color);
-}
-
-.logo-studio2 {
-  color: var(--links-text-color);
 }
 
 .link-nav {
@@ -323,6 +322,21 @@ img {
   flex-basis: calc(100% / 4 - var(--margin-left-li));
   margin-left: var(--margin-left-li);
 }
+.icon-card-set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--second-light-bg-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
 
 .section {
   padding-top: var(--padding-section);
@@ -423,13 +437,20 @@ img {
 
 .footer {
   background-color: var(--first-dark-bg-color);
-}
-.footer-pad {
   padding-top: var(--padding-footer);
   padding-bottom: var(--padding-footer);
 }
 
-.link-logo-bot {
+.footer-row {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address {
+  margin-right: 70px;
+}
+
+.footer-logo {
   font-family: var(--logo-font);
   font-size: 26px;
   line-height: 1.19;
@@ -439,7 +460,16 @@ img {
   align-items: center;
   margin-bottom: 20px;
 }
-.address {
+
+.footer-logo-web {
+  color: var(--accent-text-color);
+}
+
+.footer-logo-studio {
+  color: var(--links-text-color);
+}
+
+.address-link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -496,20 +526,15 @@ address .item:not(:last-child) {
   margin-left: var(--margin-left-li);
 }
 
-.botton-row {
-  display: flex;
-  align-items: baseline;
-}
-
 /* СОЦСЕТИ */
 
-.social {
+/* .social {
   margin-left: 70px;
   /* flex-wrap: wrap;
-  flex-direction: column; */
-}
+  flex-direction: column; 
+} */
 
-.subscribe {
+.footer-social-subscribe {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -519,7 +544,7 @@ address .item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.links-list {
+.footer-social-list {
   display: flex;
 }
 

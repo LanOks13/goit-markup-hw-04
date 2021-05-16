@@ -20,9 +20,9 @@
     <!-- Верхняя линия -->
     <header class="nav-white-bg-cl header-page">
       <div class="container main-nav">
-        <a class="link-logo" href="index.html"
-          ><span lang="en" class="logo-web">Web</span
-          ><span lang="en" class="logo-studio1">Studio</span></a
+        <a class="logo" href="index.html"
+          ><span lang="en" class="logo-part1-web">Web</span
+          ><span lang="en" class="logo-part2-studio">Studio</span></a
         >
         <nav>
           <ul class="list site-nav">
@@ -38,7 +38,7 @@
           <li class="item cont-item">
             <a class="link-header" href="mailto:info@devstudio.com">
               <svg class="icon-envelope">
-                <use href="./images/symbol-defs-2.svg#icon-envelope"></use>
+                <use href="./images/icons/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -47,7 +47,7 @@
           <li class="item cont-item">
             <a class="link-header" href="tel:+380961111111">
               <svg class="icon-smartphone">
-                <use href="./images/symbol-defs-2.svg#icon-smartphone"></use>
+                <use href="./images/icons/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -74,27 +74,51 @@
           <h2 class="title2-hidden-h2">Особенности</h2>
           <ul class="list card-set">
             <li class="item">
+              <div class="icon-card-set">
+                <svg class="features-icon">
+                  <use href="/images/icons/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
+
               <h3 class="list1-h3">Внимание к деталям</h3>
               <p class="text1">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
+
             <li class="item">
+              <div class="icon-card-set">
+                <svg class="features-icon">
+                  <use href="./images/icons/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="list1-h3">Пунктуальность</h3>
               <p class="text1">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
+
             <li class="item">
+              <div class="icon-card-set">
+                <svg class="features-icon">
+                  <use href="./images/icons/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="list1-h3">Планирование</h3>
               <p class="text1">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
+
             <li class="item">
+              <div class="icon-card-set">
+                <svg class="features-icon">
+                  <use href="./images/icons/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="list1-h3">Современные технологии</h3>
               <p class="text1">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -202,19 +226,19 @@
     </main>
 
     <!-- Подвал -->
-    <footer class="footer footer-pad">
+    <footer class="footer">
       <div class="container">
-        <div class="botton-row">
-          <div>
-            <a class="link-logo-bot" href="index.html"
-              ><span lang="en" class="logo-web">Web</span
-              ><span lang="en" class="logo-studio2">Studio</span></a
+        <div class="footer-row">
+          <div class="footer-address">
+            <a class="footer-logo" href="index.html"
+              ><span lang="en" class="footer-logo-web">Web</span
+              ><span lang="en" class="footer-logo-studio">Studio</span></a
             >
             <address>
               <ul class="list">
                 <li class="item">
                   <a
-                    class="address"
+                    class="address-link"
                     href="https://goo.gl/maps/Poxogy9ZwxsRHQay8"
                     target="_blank"
                     >г. Киев, пр-т Леси Украинки, 26</a
@@ -233,11 +257,10 @@
               </ul>
             </address>
           </div>
-
           <!-- Присоединяйтесь -->
-          <div class="social">
-            <p class="subscribe">Присоединяйтесь</p>
-            <ul class="list links-list">
+          <div class="footer-social">
+            <p class="footer-social-subscribe">Присоединяйтесь</p>
+            <ul class="list footer-social-list">
               <li>
                 <a
                   href="https://www.instagram.com/"
