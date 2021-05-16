@@ -321,7 +321,9 @@ img {
 .card-set > .item {
   flex-basis: calc(100% / 4 - var(--margin-left-li));
   margin-left: var(--margin-left-li);
+  margin-top: var(--margin-left-li);
 }
+
 .icon-card-set {
   display: flex;
   justify-content: center;
@@ -503,28 +505,61 @@ address .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-/* ^^^^^^^^^^^^^^^^ ПОСТОЯННЫЕ КЛИЕНТЫ - start ********************** */
-.out-line {
-  outline: 3px solid green;
-  background-color: yellow;
-}
+/* /* %%%%%%%%%%%%%%%%%%%%%%% ПОСТ.КЛ. %%%%%%%%%%%%%%%%%%%%  */
 
 .reg-customers {
   padding-bottom: var(--padding-section);
+}
+
+.logo-customers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  overflow: hidden;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 
 .set-customers {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--margin-left-li));
-
-  text-align: center;
 }
 
-.set-customers > .item {
+.set-customers .item {
+  flex-basis: calc(100% / 6 - var(--margin-left-li));
+  margin-left: calc(var(--margin-left-li));
+  margin-top: var(--margin-left-li);
+}
+
+.icon-Logo {
+  /* width: 106px;
+  height: 60px; */
+  fill: currentColor;
+  fill: #afb1b8;
+}
+
+.logo-customers:focus,
+.logo-customers:hover {
+  border: 1px solid var(--accent-text-color);
+}
+
+.logo-customers:focus .icon-Logo,
+.logo-customers:hover .icon-Logo {
+  fill: var(--accent-text-color);
+}
+/* ^^^^^^^^^^^^^^^^ ПОСТОЯННЫЕ КЛИЕНТЫ - start ********************** */
+/* .out-line {
+  outline: 3px solid green;
+  background-color: yellow; 
+}*/
+
+/* .set-customers > .item {
   flex-basis: calc(100% / 6 - var(--margin-left-li));
   margin-left: var(--margin-left-li);
-}
+} */
 
 /* СОЦСЕТИ */
 
