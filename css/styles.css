@@ -12,6 +12,7 @@
   --third-light-bg-color: #e5e5e5;
 
   --border-header-box: #ececec;
+  --icons-color: #afb1b8;
 
   --shadow-item-box: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -335,10 +336,10 @@ img {
   margin-bottom: 30px;
 }
 
-.features-icon {
+/* .features-icon {
   width: 70px;
   height: 70px;
-}
+} */
 
 .section {
   padding-top: var(--padding-section);
@@ -433,8 +434,33 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--alt-text-color);
+  margin-bottom: 16px;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--icons-color);
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
 
 .reg-customers {
