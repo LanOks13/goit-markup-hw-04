@@ -11,7 +11,8 @@
   --black-bg-cl: #2f303a;
 
   --border-header-box: #ececec;
-  --shadow-item-box: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --shadow-item-box: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
   --padding-section: 94px;
   --margin-left-li: 30px;
@@ -111,11 +112,17 @@ img {
 }
 
 /* 1-й спосіб відступу елементів один від одного */
+
 /* .list-contact .item:not(:last-child) {
   margin-right: 50px;
 } */
 
 /* 2-й спосіб відступу елементів один від одного */
+
+/* .list-contact .cont-item + .cont-item {
+  margin-left: 50px; 
+}*/
+
 .list-contact .item + .item {
   margin-left: 50px;
 }
@@ -124,6 +131,10 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.list-contact .cont-item + .cont-item {
+  margin-left: 30px;
 }
 
 .link-logo-header {
@@ -146,7 +157,9 @@ img {
 }
 
 .link-nav,
-.link-header {
+.list-contact .link-header {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -170,11 +183,41 @@ img {
   color: var(--accent-cl);
 }
 
+.icon-envelope {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.icon-smartphone {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 /* ШАПКА - ГЕРОЙ -HERO */
 .hero-section {
   background-color: var(--black-bg-cl);
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+/* OVERLAY */
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-img-1.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
