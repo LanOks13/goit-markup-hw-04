@@ -69,7 +69,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 /* ВЕРХНЯЯ ЛИНИЯ - HEADER */
@@ -525,4 +525,9 @@ address .item:not(:last-child) {
 
   background: var(--primary-bg-cl);
   border: 1px solid #eeeeee;
+}
+
+.cards-link {
+  text-decoration: none;
+  color: inherit;
 }
