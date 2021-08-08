@@ -11,6 +11,7 @@
   --black-bg-cl: #2f303a;
 
   --border-header-box: #ececec;
+  --icons-color: #afb1b8;
   --shadow-item-box: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
@@ -355,6 +356,27 @@ img {
   padding-bottom: var(--padding-section);
 }
 
+.our-team {
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--margin-left-li));
+  margin-top: calc(-1 * var(--margin-left-li));
+}
+
+.our-team > .item {
+  flex-basis: calc(100% / 4 - var(--margin-left-li));
+  margin-left: var(--margin-left-li);
+  margin-top: var(--margin-left-li);
+
+  background: var(--primary-bg-cl);
+  box-shadow: var(--shadow-item-box);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+}
+
 .content {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -379,27 +401,47 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-cl);
+  margin-bottom: 16px;
 }
 
-.our-team {
-  padding: 0;
-  margin: 0;
+/* SOCIAL LINKS */
 
+.social-icons {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--margin-left-li));
-  margin-top: calc(-1 * var(--margin-left-li));
+  justify-content: center;
+  align-items: center;
 }
 
-.our-team > .item {
-  flex-basis: calc(100% / 4 - var(--margin-left-li));
-  margin-left: var(--margin-left-li);
-  margin-top: var(--margin-left-li);
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+/* 
+.social-icons-link {
+  background-color: var(--alt-text-cl);
+} */
 
-  background: var(--primary-bg-cl);
-  box-shadow: var(--shadow-item-box);
-  border-radius: 0px 0px 4px 4px;
-  overflow: hidden;
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--alt-text-cl);
+}
+
+.social-icons-svg {
+  fill: var(--icons-color);
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background: var(--accent-cl);
+}
+
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+  fill: var(--primary-bg-cl);
 }
 
 /* ПОДВАЛ - FOOTER */
