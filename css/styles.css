@@ -53,6 +53,15 @@ p {
   margin: 0;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+}
+
 .list {
   list-style: none;
 }
@@ -61,15 +70,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid red;
 }
 
 /* ВЕРХНЯЯ ЛИНИЯ - HEADER */
@@ -85,8 +85,8 @@ img {
 
 .site-nav {
   display: flex;
-  margin-left: 93px;
   align-items: center;
+  margin-left: 93px;
 }
 
 /* 1-й спосіб відступу елементів один від одного */
@@ -97,12 +97,6 @@ img {
 /* 2-й спосіб відступу елементів один від одного */
 .site-nav .item + .item {
   margin-left: 50px;
-}
-
-.site-nav .link-nav {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .list-contact {
@@ -123,18 +117,19 @@ img {
   margin-left: 50px; 
 }*/
 
+/* 
 .list-contact .item + .item {
   margin-left: 50px;
-}
-
-.list-contact .link-header {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+} */
 
 .list-contact .cont-item + .cont-item {
   margin-left: 30px;
+}
+
+.site-nav .link-nav {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link-logo-header {
@@ -156,9 +151,7 @@ img {
   color: var(--alt-text-cl);
 }
 
-.link-nav,
-.list-contact .link-header {
-  display: flex;
+.link-nav {
   align-items: center;
   font-weight: 500;
   font-size: 14px;
@@ -168,8 +161,17 @@ img {
   text-decoration: none;
 }
 
-.link-header {
+.list-contact .link-header {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--main-text-cl);
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link-nav:hover,
