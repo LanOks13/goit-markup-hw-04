@@ -320,7 +320,8 @@ img {
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ - WORK SECTION */
 
 .work-title,
-.team-title {
+.team-title,
+.title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -442,6 +443,55 @@ img {
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
   fill: var(--primary-bg-cl);
+}
+
+/* ПОСТОЯННЫЕ КЛИЕНТЫ */
+
+.reg-customers {
+  padding-bottom: var(--padding-section);
+  padding-top: var(--padding-section);
+}
+
+.logo-customers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 16px 32px;
+}
+
+.set-customers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: calc(-1 * var(--margin-left-li));
+}
+
+.set-customers .item {
+  flex-basis: calc(100% / 6 - var(--margin-left-li));
+  margin-left: calc(var(--margin-left-li));
+  margin-top: var(--margin-left-li);
+}
+
+.icon-Logo {
+  /* width: 106px;
+  height: 60px; */
+  fill: currentColor;
+  fill: #afb1b8;
+}
+
+.logo-customers:focus,
+.logo-customers:hover {
+  border: 1px solid var(--accent-cl);
+}
+
+.logo-customers:focus .icon-Logo,
+.logo-customers:hover .icon-Logo {
+  fill: var(--accent-cl);
 }
 
 /* ПОДВАЛ - FOOTER */
