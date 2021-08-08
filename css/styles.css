@@ -543,6 +543,18 @@ address .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
+/* FOOTER - СОЦИАЛЬНЫЕ СЕТИ */
+
+.footer-social-subscribe {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--alt-text-cl);
+  margin-bottom: 20px;
+}
+
 /* PORTFOLIO */
 
 .section-portfolio {
