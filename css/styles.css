@@ -416,23 +416,31 @@ img {
 .social-icons-item:not(:last-child) {
   margin-right: 10px;
 }
-/* 
-.social-icons-link {
-  background-color: var(--alt-text-cl);
-} */
 
-.social-icons-link {
+.social-icons-link,
+.footer-social-icons-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+
+.social-icons-link {
   background-color: var(--alt-text-cl);
+}
+
+.footer-social-icons-link {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .social-icons-svg {
   fill: var(--icons-color);
+}
+
+.footer-social-icons-svg {
+  fill: var(--primary-bg-cl);
 }
 
 .social-icons-link:hover,
@@ -443,6 +451,11 @@ img {
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
   fill: var(--primary-bg-cl);
+}
+
+.footer-social-icons-link:hover,
+.footer-social-icons-link:focus {
+  background: var(--accent-cl);
 }
 
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
@@ -499,6 +512,15 @@ img {
   background-color: var(--black-bg-cl);
   padding-top: var(--padding-footer);
   padding-bottom: var(--padding-footer);
+}
+
+.footer-row {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address {
+  margin-right: 70px;
 }
 
 .link-logo-footer {
