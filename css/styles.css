@@ -474,26 +474,38 @@ img {
   height: 92px;
   border-radius: 4px;
   overflow: hidden;
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
 }
 
 .set-customers {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-left: calc(-1 * var(--margin-left-li));
+  /* margin-left: calc(-1 * var(--margin-left-li)); */
+  padding: 0;
+  margin: 0;
 }
 
-.set-customers .item {
+/* .set-customers .item {
   flex-basis: calc(100% / 6 - var(--margin-left-li));
   margin-left: calc(var(--margin-left-li));
   margin-top: var(--margin-left-li);
+} */
+
+/* 1-й спосіб відступу елементів один від одного */
+.set-customers .item:not(:last-child) {
+  margin-right: 30px;
 }
+
+/* 2-й спосіб відступу елементів один від одного
+.set-customers .item + .item {
+  margin-left: 30px;
+} */
 
 .icon-Logo {
   /* width: 106px;
   height: 60px; */
-  fill: currentColor;
+  /* fill: currentColor; */
   fill: #afb1b8;
 }
 
@@ -674,9 +686,9 @@ address .item:not(:last-child) {
   text-decoration: none;
   color: inherit;
 }
-
+/* 
 .our-projects > .item:hover,
 .our-projects > .item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
