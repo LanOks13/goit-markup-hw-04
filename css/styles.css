@@ -679,6 +679,10 @@ address .item:not(:last-child) {
   margin-top: var(--margin-left-li);
 
   background: var(--primary-bg-cl);
+  /* border: 1px solid #eeeeee; */
+}
+
+.our-projects > .item .cards-link {
   border: 1px solid #eeeeee;
 }
 
